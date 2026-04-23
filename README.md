@@ -104,7 +104,7 @@ require_once 'sdk/php/KHPay.php';
 $khpay = new KHPay('your_api_key');
 
 // Create a payment
-$payment = $khpay->createPayment(10.00, 'USD', 'Order #123');
+$payment = $khpay->createPayment(1.00, 'USD', 'Order #123');
 echo $payment['data']['qr_url'];
 
 // Check status
